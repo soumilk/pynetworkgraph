@@ -10,4 +10,5 @@ python code that receives data from sender and make a graph of message received 
 * x-axis represent unique messages received  
 * y-axis represent no of occurence of each message  
 <br />
+![graph](images.png)
 
