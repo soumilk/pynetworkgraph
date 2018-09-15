@@ -5,7 +5,7 @@ import  socket
 #              ip_version4,         UDP 
 s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 # defining ip and port below 
-ip="192.168.10.218"
+ip="192.168.1.37"
 port=7890
 
 while  1 :

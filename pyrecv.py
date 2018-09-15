@@ -13,12 +13,15 @@ s.bind(("",port))
 
 # defining  empty dictionary
 x={}
-for  i in range(10) :
+for  i in range(5) :
 #  now receiving data
-	data=s.recvfrom(100)
-	#creating new keys with value 1 or updating previous keys by 1 increment
-	x[data[0]]=x.get(data[0], 0) + 1
-	print "data received:",data[0]
+	fulldata=s.recvfrom(100)
+#spliting sentence into list of individual words
+	data=fulldata[0].split()
+	#creating new keys(default value 1) or updating previous keys(adding 1)
+	for i in data:
+		x[i]=x.get(i, 0) + 1
+	print "data received:",data
 y=x.items()
 # unpacking a list of pairs into two tuples
 a,b=zip(*y)
