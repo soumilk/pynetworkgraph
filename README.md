@@ -1,5 +1,6 @@
 # pynetworkgraph   
-python code that receives data from sender and make a graph of message received and their no of occurence  
+python code that receives data from sender and make a graph of message received and their no of occurence.  
+<br/>
 <br />  
 ## files included   
 * **pyrecv.py** - receive data through port 7890 and arrange them in dictionary with values indicating their no. of occurence  
